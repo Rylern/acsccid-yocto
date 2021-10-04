@@ -5,6 +5,7 @@ LICENSE = "LGPL-2.1"
 LIC_FILES_CHKSUM = "file://COPYING;md5=2d5025d4aa3495befef8f17206a5b0a1"
 
 DEPENDS += "pcsc-lite libusb flex perl pkgconfig"
+RDEPENDS:${PN} += "pcsc-lite"
 
 SRC_URI  = "https://downloads.sourceforge.net/acsccid/${BP}.tar.bz2"
 SRC_URI += "file://blacklist-libnfc.conf"
